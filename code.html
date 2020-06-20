@@ -1,0 +1,64 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><script src="code_files/jquery-latest.js" type="text/javascript"></script><script language="javascript">'use strict';$(function() {var width = 720; var animationSpeed = 1000; var pause = 1000; var currentSlide = 1;var $sdr1603 = $('#sdr1603'); var $slideContainer = $('.sld', $sdr1603); var $sld = $('.slide', $sdr1603); var interval; function startsdr1603() { interval = setInterval(function() { $slideContainer.animate({'margin-left': '-='+width}, animationSpeed, function() {if (++currentSlide === $sld.length) {currentSlide = 1; $slideContainer.css('margin-left', 0); }});}, pause);} function pausesdr1603() {clearInterval(interval);}$slideContainer.on('mouseenter', pausesdr1603).on('mouseleave', startsdr1603);startsdr1603();});</script></head><body><div style="width: 720px; margin: 0 auto;"><div style="position: relative; width: 720px; ">
+<style type="text/css">#gpoy {position: absolute; right:-168px; top:6px; padding: 8px 0px 3px; z-index:99; opacity: 0.9; transition: 1s;  line-height: 12px;}.repper {width: 732px; margin: 0 auto; position: relative; overflow: hidden; border-radius: 20px; box-shadow: 7px 7px 9px #888888 ;}.repper:hover #gpoy {transition: 2s; right:26px; }</style><div class="repper"><div id="gpoy"></div><style type="text/css">#sdr1603 {width: 720px; height: 400px; border: 6px solid #00FFFF; border-radius: 20px; overflow: hidden; position: relative; cursor: pointer; }#sdr1603 .sld {width: 4320px; height: 400px;  display: block; margin: 0; padding: 0;}#sdr1603 .slide {width: 720px; height: 400px; float: left; list-style-type: none;}.SAM200620 {position: absolute; max-width: 720px; margin: 0px;}.c167380  {position: absolute; bottom: 0px; width:100%;  padding: 12px; background-color: rgba(0, 0, 0, 0.5); color: #FFFFFF; font-size:24pt; font-family:Tahoma; text-align:center; line-height:48px; z-index:33; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}</style>
+
+<div id="sdr1603">
+<ul class="sld" style="margin-left: -3598.07px;">
+
+<li class="slide slide1">
+ <figure class="SAM200620">
+  <img src="code_files/these-are-some.jpg">
+ <figcaption class="c167380">
+These Are Some
+</figcaption> 
+ </figure>
+ </li>
+
+<li class="slide slide2">
+ <figure class="SAM200620">
+  <img src="code_files/online-courses.jpg">
+ <figcaption class="c167380">
+Online Courses
+</figcaption> 
+ </figure>
+ </li>
+
+<li class="slide slide3">
+ <figure class="SAM200620">
+  <img src="code_files/i-have-done.jpg">
+ <figcaption class="c167380">
+I Have Done
+</figcaption> 
+ </figure>
+ </li>
+
+<li class="slide slide4">
+ <figure class="SAM200620">
+  <img src="code_files/with-help-of.jpg">
+ <figcaption class="c167380">
+With Help Of
+</figcaption> 
+ </figure>
+ </li>
+
+<li class="slide slide5">
+ <figure class="SAM200620">
+  <img src="code_files/microsoft-educator-center.jpg">
+ <figcaption class="c167380">
+Microsoft Educator Center
+</figcaption> 
+ </figure>
+ </li>
+
+<li class="slide slide1">
+ <figure class="SAM200620">
+  <img src="code_files/these-are-some.jpg">
+ <figcaption class="c167380">
+These Are Some
+</figcaption> 
+ </figure>
+ </li>
+
+</ul></div></div></div>
+</div>
+</body></html>
